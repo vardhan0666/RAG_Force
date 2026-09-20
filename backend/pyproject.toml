@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "ragforge-backend"
+version = "1.0.0"
+description = "Production RAG and Knowledge Intelligence Platform Backend"
+authors = ["Senior Software Architect <architect@ragforge.io>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.0"
+uvicorn = {extras = ["standard"], version = "^0.30.0"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.30"}
+asyncpg = "^0.29.0"
+alembic = "^1.13.1"
+pydantic = {extras = ["email"], version = "^2.7.1"}
+pydantic-settings = "^2.2.1"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.9"
+redis = "^5.0.4"
+qdrant-client = "^1.9.0"
+openai = "^1.30.0"
+pypdf = "^4.2.0"
+python-docx = "^1.1.0"
+markdown = "^3.6"
+beautifulsoup4 = "^4.12.3"
+httpx = "^0.27.0"
+tiktoken = "^0.7.0"
+pytest = "^8.2.0"
+pytest-asyncio = "^0.23.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
